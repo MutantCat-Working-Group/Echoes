@@ -30,7 +30,10 @@ func GetSysInfo() (info LSysInfo) {
 
 	// 获取200ms内的CPU信息，太短不准确，也可以获几秒内的，但这样会有延时，因为要等待
 	cc, _ := cpu.Percent(time.Millisecond*200, false)
-	info.CpuUsedPercent = cc[0]
+	// 如果因权限等信息获取这个失败了，就不设置这个值
+	if len(cc) > 0 {
+		info.CpuUsedPercent = cc[0]
+	}
 
 	// 获取开机时间
 	boottime, _ := host.BootTime()
