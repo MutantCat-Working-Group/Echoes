@@ -1,7 +1,7 @@
 package lifecycle
 
 import (
-	"com.mutantcat.echose/router"
+	"com.mutantcat.echoes/router"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 )

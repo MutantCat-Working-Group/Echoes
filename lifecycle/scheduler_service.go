@@ -1,9 +1,9 @@
 package lifecycle
 
 import (
-	"com.mutantcat.echose/scheduler"
-	"com.mutantcat.echose/speaker"
-	"com.mutantcat.echose/status"
+	"com.mutantcat.echoes/scheduler"
+	"com.mutantcat.echoes/speaker"
+	"com.mutantcat.echoes/status"
 	"fmt"
 	"github.com/blinkbean/dingtalk"
 	"github.com/shirou/gopsutil/load"

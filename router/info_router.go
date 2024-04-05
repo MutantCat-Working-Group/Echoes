@@ -1,7 +1,7 @@
 package router
 
 import (
-	"com.mutantcat.echose/status"
+	"com.mutantcat.echoes/status"
 	"github.com/gin-gonic/gin"
 )
 

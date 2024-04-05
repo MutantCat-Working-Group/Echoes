@@ -1,17 +1,11 @@
 package scheduler
 
 import (
-	"github.com/antlabs/timer"
 	"github.com/jasonlvhit/gocron"
-	"time"
 )
 
 func IntervalDo(interval int, f func()) {
-	tm := timer.NewTimer()
-
-	tm.ScheduleFunc(time.Duration(interval)*time.Second, f)
-
-	go tm.Run()
+	gocron.Every(uint64(interval)).Seconds().Do(f)
 }
 
 func DayDo(daily_time string, f func()) {

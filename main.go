@@ -1,8 +1,8 @@
 package main
 
 import (
-	"com.mutantcat.echose/lifecycle"
-	"com.mutantcat.echose/router"
+	"com.mutantcat.echoes/lifecycle"
+	"com.mutantcat.echoes/router"
 	"flag"
 	"time"
 )

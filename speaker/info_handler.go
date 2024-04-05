@@ -1,7 +1,7 @@
 package speaker
 
 import (
-	"com.mutantcat.echose/status"
+	"com.mutantcat.echoes/status"
 	"fmt"
 	"github.com/shirou/gopsutil/v3/disk"
 )
