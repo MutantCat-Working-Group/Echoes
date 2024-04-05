@@ -76,7 +76,58 @@
     ./echoes -server_name=echoes_server -daily_time=09:30 -interval_time=30 -loadavg_max_percent=70 -mem_used_percent=90 -cpu_used_percent=90 -pin_enable=1 -port=9966 -notice_mod=dingbot -token=xxxx -secret0=xxxx
     ```
 
+- 通知形式
+    ![](./example/ding_bot.png)
+
 ### 四、接口文档
+1. PING - /ping
+    - 说明：检查服务器监控是否存活
+    - 请求方式：任意
+    - 返回示例：
+        ```json
+        {
+            "code": 0,
+            "msg": "pong"
+        }
+        ```
+2. 服务器信息 - /info
+    - 说明：获取当前服务器信息
+    - 请求方式：任意
+    - 返回示例：
+        ```json
+        {
+        "code": 0,
+        "data": {
+            "disk": {
+            "path": "/",
+            "fstype": "xfs",
+            "total": 53660876800,
+            "free": 42608521216,
+            "used": 11052355584,
+            "usedPercent": 20.596673485588664,
+            "inodesTotal": 26214400,
+            "inodesUsed": 385915,
+            "inodesFree": 25828485,
+            "inodesUsedPercent": 1.4721488952636719
+            },
+            "system": {
+            "MemAll": 3743,
+            "MemFree": 2086,
+            "MemUsed": 1657,
+            "MemUsedPercent": 44.27110833773341,
+            "Days": 31,
+            "Hours": 13,
+            "Minutes": 57,
+            "Seconds": 55,
+            "CpuUsedPercent": 15.000000020372681,
+            "OS": "linux",
+            "Arch": "386",
+            "CpuCores": 2
+            }
+        },
+        "msg": "success"
+        }
+        ```
 
 ### 五、专注的点
 - 全平台设备探针和告警支持。
