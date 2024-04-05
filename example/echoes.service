@@ -3,7 +3,7 @@ Description=Echoes service
 
 [Service]
 Type=forking
-ExecStart=/bin/bash -c "/home/com.mutantcat.echoes-1.0.20240405-linux_x86 -port 9967 -notice_mod dingbot -token e404ae5af0fc39fe7eefa6aa8e9828e0f11481ecde9ecd641a5fefccacdd0cee -secret0 SECd8988983acc3ff8029e45a831cc32bba0ac0c2eb753383259081b07dfcc44a05 -server_name 自建-服务器1 &"
+ExecStart=/bin/bash -c "/home/com.mutantcat.echoes-1.0.20240405-linux_x86 -port 9967 -notice_mod dingbot -token xxx -secret0 xxx -server_name 自建-服务器1 &"
 KillMode=process
 Restart=on-failure
 RestartSec=3s
