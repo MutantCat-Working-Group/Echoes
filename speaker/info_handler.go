@@ -9,7 +9,7 @@ import (
 // 通过系统信息和硬盘信息获取markdown信息
 func GetMarkDownInfoBySysInfoAndDiskInfo(info status.LSysInfo, d *disk.UsageStat, name string) string {
 	message := "### 服务器基本信息"
-	message += "  \n> 服务器 - " + name + " - 运行状态"
+	message += "  \n> 服务器\"" + name + "\"运行状态"
 	message += "  \n> 您的服务器已运行-" + fmt.Sprintf("%d", info.Days) + "天" + fmt.Sprintf("%d", info.Hours) + "小时" + fmt.Sprintf("%d", info.Minutes) + "分钟" + fmt.Sprintf("%d", info.Seconds) + "秒"
 	message += "  \n- 系统运行内存使用率为：" + fmt.Sprintf("%.2f", info.MemUsedPercent) + "%"
 	message += "  \n- 系统运行CPU使用率为：" + fmt.Sprintf("%.2f", info.CpuUsedPercent) + "%"
