@@ -26,7 +26,7 @@ func RegisterNotice(server_name string, daily_time, notice_mod string, args ...s
 	switch notice_mod {
 	case "dingbot":
 		bot := dingtalk.InitDingTalkWithSecret(args[0], args[1])
-		bot.SendTextMessage("您的服务器\"" + server_name + "\"已开启通知和告警服务")
+		bot.SendTextMessage("您的服务器\"" + server_name + "\"已开启通知和告警服务。")
 		f := DingBotNotice(server_name, bot)
 		scheduler.DayDo(daily_time, f)
 	default:
