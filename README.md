@@ -45,7 +45,7 @@
     -cpu_used_percent           CPU使用率告警阈值（百分比）
     -pin_enable                 探针模式是否开启（1/0）
     -port                       主动服务的端口
-    -notice_mod                 通知方式（dingbot/mail）
+    -notice_mod                 通知方式（dingbot/mail/jiang）
     -token                      通知方式的token
     -secret0                    通知方式的secret
     ```
@@ -146,6 +146,7 @@
 - [X] 作为探针主动获得服务器状态
 - [X] 钉钉机器人群通知
 - [ ] 邮箱通知
+- [ ] Server酱通知
 ### 七、历史版本
 - https://github.com/tyza66/ServerWatcher-DingBot
 - https://github.com/tyza66/ServerWatcher-DingBot-Go
