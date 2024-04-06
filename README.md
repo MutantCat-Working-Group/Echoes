@@ -73,7 +73,7 @@
 
 - 演示参数
     ```
-    ./echoes -server_name=echoes_server -daily_time=09:30 -interval_time=30 -loadavg_max_percent=70 -mem_used_percent=90 -cpu_used_percent=90 -pin_enable=1 -port=9966 -notice_mod=dingbot -token=xxxx -secret0=xxxx
+    ./echoes -server_name echoes_server -daily_time 09:30 -interval_time 30 -loadavg_max_percent 70 -mem_used_percent 90 -cpu_used_percent 90 -pin_enable 1 -port 9966 -notice_mod dingbot -token xxxx -secret0 xxxx
     ```
 
 - 通知形式
@@ -147,6 +147,7 @@
 - [X] 钉钉机器人群通知
 - [ ] 邮箱通知
 - [ ] Server酱通知
+
 ### 七、历史版本
 - https://github.com/tyza66/ServerWatcher-DingBot
 - https://github.com/tyza66/ServerWatcher-DingBot-Go
